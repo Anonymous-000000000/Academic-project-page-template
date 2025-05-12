@@ -86,7 +86,7 @@
         <div class="image-with-caption">
           <img src="static/images/F2.jpg" alt="First image description">
           <h2 class="subtitle has-text-centered">
-            Results of our model in continually learning new personalized concepts, including subjects and motions, for customized text-to-video generation under the CTVC setting. Compared with L2DM, our model achieves better performance to address the CTVC problem.
+            Customization performance of our model in continually learning new personalized concepts, including subjects and motions, for customized text-to-video generation under the CTVC setting. Compared with L2DM, our model achieves better performance to address the CTVC problem.
           </h2>
         </div>
       </div>
@@ -146,7 +146,7 @@
         <div class="image-with-caption">
           <img src="static/images/F3.jpg" alt="First image description">
           <h2 class="subtitle has-text-centered">
-            Visualization of 35 consecutive text-to-video customization tasks in the CVC dataset.
+            Visualization of 35 consecutive text-to-video customization tasks in the CVC dataset, including 25 personalized subjects and 10 motion (yellow) patterns. Among the 25 personalized subjects, 9 are pets (blue), 5 are styles (purple), and the remaining 11 are objects (green).
           </h2>
         </div>
       </div>
@@ -155,6 +155,95 @@
 </section>
 <!-- End single image display -->
 
+
+<!-- Three Independent Videos Display -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title is-2 has-text-centered has-text-weight-bold mb-5">
+        Qualitative Results
+      </h1>
+      
+      <!-- 视频1 -->
+      <div class="video-container has-text-centered mb-6">
+        <h2 class="subtitle is-4 has-text-weight-semibold mb-3">Result 1</h2>
+        <video 
+          autoplay 
+          controls 
+          muted 
+          loop
+          class="centered-video"
+          poster="static/videos/poster1.jpg">
+          <source src="static/videos/V1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      
+      <!-- 视频2 -->
+      <div class="video-container has-text-centered mb-6">
+        <h2 class="subtitle is-4 has-text-weight-semibold mb-3">Result 2</h2>
+        <video 
+          autoplay 
+          controls 
+          muted 
+          loop
+          class="centered-video"
+          poster="static/videos/poster2.jpg">
+          <source src="static/videos/V2.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      
+      <!-- 视频3 -->
+      <div class="video-container has-text-centered">
+        <h2 class="subtitle is-4 has-text-weight-semibold mb-3">Result 3</h2>
+        <video 
+          autoplay 
+          controls 
+          muted 
+          loop
+          class="centered-video"
+          poster="static/videos/poster3.jpg">
+          <source src="static/videos/V3.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* 视频容器样式 */
+  .video-container {
+    max-width: 800px;
+    margin: 0 auto 3rem auto;
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  
+  /* 视频元素样式 */
+  .centered-video {
+    width: 100%;
+    max-height: 500px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 4px;
+  }
+  
+  /* 响应式调整 */
+  @media screen and (max-width: 768px) {
+    .video-container {
+      padding: 10px;
+    }
+    .centered-video {
+      max-height: 300px;
+    }
+  }
+</style>
+
+  
 
 <!-- Video carousel -->
 <section class="hero is-small">
