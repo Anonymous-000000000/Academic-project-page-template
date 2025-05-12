@@ -95,6 +95,41 @@
 </section>
 <!-- End single image display -->
 
+<!-- Single image display with size control -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="single-image-container">
+        <div class="image-with-caption">
+          <!-- 修改后的图片容器 -->
+          <div class="image-wrapper" style="max-width: 800px; margin: 0 auto;">
+            <img 
+              src="static/images/F2.jpg" 
+              alt="Customization performance comparison"
+              style="width: 100%; height: auto; border: 1px solid #eee; border-radius: 4px;"
+            >
+          </div>
+          <h2 class="subtitle has-text-centered mt-4" style="max-width: 800px; margin: 0 auto;">
+            Customization performance of our model in continually learning new personalized concepts, including subjects and motions, for customized text-to-video generation under the CTVC setting. Compared with L2DM, our model achieves better performance to address the CTVC problem.
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* 响应式调整 */
+  @media screen and (max-width: 768px) {
+    .image-wrapper {
+      max-width: 50% !important;
+    }
+    .subtitle {
+      padding: 0 15px;
+    }
+  }
+</style>
+
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
@@ -242,46 +277,6 @@
     }
   }
 </style>
-
-  
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h1 class="title is-2 has-text-centered has-text-weight-bold mb-5">
-        Qualitative Results
-      </h1>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/V3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/V1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/V2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
-
-
-
 
   <footer class="footer">
   <div class="container">
